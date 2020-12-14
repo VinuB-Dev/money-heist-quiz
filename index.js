@@ -38,12 +38,12 @@ var question5 = {
 }
 
 function quiz(question, answer) {
-  var userAnswer = readlineSync.question(chalk.blue(question))
+  var userAnswer = readlineSync.question(chalk.red(question))
   if (userAnswer.toLowerCase() == answer.toLowerCase()) {
-    console.log(chalk.green('right!!'))
+    console.log(chalk.bgGreen('right!!'))
     score = score + 1
   } else {
-    console.log(chalk.red('wrong...'))
+    console.log(chalk.bgRed('wrong...'))
   }
 }
 
